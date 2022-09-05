@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Site Map</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <style>
+   
+        #map{
+            height: 100vh;
+            width: 100%;
+            /* padding: 10%; */
+            background-image: url(https://static4.depositphotos.com/1000715/384/i/600/depositphotos_3842728-stock-photo-room-with-brick-wall.jpg);
+            
+        }
+        .btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+        
+    </style>
+</head>
+
+
+<body>
+    
+    <input type="button" class="btn  " value="to check geolocation" onclick="geolocation()">
+    <div id="map"></div>
+    <script src=" https://maps.googleapis.com/maps/api/js?key=&callback=init " async defer></script>
+
+    <script>
+        function geolocation(){
+            if(window.navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                alert("Your browser does not support geolocation")
+            }
+        }
+        function showPosition(position){
+            alert('latitute:' + position.coords.latitude + '/n' + 'logitude' + position.coords.longitude)
+        }
+        function init(){
+    
+    var num  = new google.maps.LatLng(24.8873, 67.1518)
+    var myoptions = {
+        zoom:50,
+        center:num,
+        mapTypeId: google.maps.MapTypeId.roadmap
+    }
+
+    var mymap = new google.maps.Map(document.getElementById("map"), myoptions);
+
+    var marker = new google.maps.Marker({
+        position:num,
+        map:mymap,
+        title:"Aptech Metro Star Gate"
+    })
+    function geolocation(){
+        if(window.navigator.geolocation){
+           navigator.geolocation.getCurrentPosition(showPosition)
+        } else {
+            alert("your browser does not support geolocation")
+        }
+    }
+    function showPosition(position){
+        alert('latitude:' + position.coords.latitude + '\n' + 'longitude' + position.coords.longitude)
+
+        console.log(position.coords.latitude)
+        console.log(position.coords.longitude)
+    }
+
+}
+
+    </script>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:#cfa05e ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .form{
+        padding: 50px;
+        margin: 100px;
+        margin-left: 270px;
+    }
+    form{
+        background: #e9be89;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        align-content: center;
+        width: 50%;
+     padding: 100px;
+
+        
+       
+    }
+    #btn{
+        color: rgb(0, 0, 0);
+        background:rgb(228, 193, 148);
+    }
+    #web{
+        color: black;
+    }
+    #label4{
+        color: rgb(56, 32, 9);
+    }
+#email{
+    color: black;
+  
+}
+#pass{
+    color: black;
+}
+#exp{
+    color: black;
+}
+.form-check{
+    color:  rgb(61, 35, 10);
+    
+}
+.form-control{
+    background-color:rgba(247, 227, 201, 0.815) ;
+}
+.fd{
+    font-size: 50px;
+    font-style: italic;
+    text-decoration:underline;
+    text-align: center;
+    padding: 0px;
+    margin-top: 80px;
+}
+
+</style>
+<body>
+<div class="fd">
+    Feedback
+   
+</div>
+
+
+    
+    <form class="form">
+        <div class="form-group row">
+            
+          <label for="inputEmail3" class="col-sm-2 col-form-label" id="email"><em><ins><strong>Email</strong></ins></em> </label>
+          
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label" id="pass">  <em><ins><strong>Password</strong></ins></em></label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+       
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0" id="exp"><em><ins><strong>Experience</strong></ins></em></legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Excellent
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+               Good
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                 Average
+                </label>
+              </div>
+            </div>
+          </div>
+        
+        <div class="form-group row">
+          <div class="col-sm-2" id="web"><em><ins><strong>Is this Website is Useful?</strong></ins></em></div>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1" id="label4">
+               Yeah!It's good for Information about 7 Wonders.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" id="btn"><strong>Submit</strong></button>
+          </div>
+        </div>
+      </form>
+</body>
+</html>

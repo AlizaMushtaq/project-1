@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/PC/Downloads/wonder_of_world/Gallery.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./Gallery_files/style.css">
+</head>
+<body class="body">
+
+
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt=""height="150px" width="150px">
+            </div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#7 WONDER">7 WONDER</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Contact.html">Contact</a>
+                 </div>
+          </nav>
+          <section class="Gallery" id="Gallery">
+          <div class="heading">
+            <h2><span>GALLERY</span></h2></div>
+            
+         </section>
+         </header>
+  
+
+    <section class="Gallery" id="Gallery">
+    <div class="full-img" id="fullimgBox">
+        <img src="./Gallery_files/c.jfif" id="fullimg">
+        <span onclick="closeFullimg()">x</span>
+    </div>
+    <div class="image-gallery">
+        <img src="./Gallery_files/c.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/mp6.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/mp1.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc2.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/tm1.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc5.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/p2.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/pog1.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/pog7.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/c7.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/c8.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc4.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc1.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc3.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc5.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc6.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/pog2.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/pog3.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/tm4.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/tm2.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/tm3.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/c5.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/tm1.jfif" onclick="openFullimg(this.src)">
+        <img src="./Gallery_files/woc5.jfif" onclick="openFullimg(this.src)">
+        
+    </div>
+</section>
+    <script>
+        var fullimgBox =document.getElementById("fullimgBox")
+        var fullimg =document.getElementById("fullimg")
+    function openFullimg(pic){
+        fullimgBox.style.display ="flex";
+        fullimg.src =pic;
+    }
+
+    function closeFullimg(){
+    fullimgBox.style.display ="none";
+    }
+
+
+    </script>
+
+    
+
+</body></html>
